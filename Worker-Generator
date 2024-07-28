@@ -1,0 +1,30 @@
+#!/bin/bash
+echo "Save As:"
+read varsave
+echo \
+
+echo "Pool URL:"
+read varlink
+echo \
+
+echo "Pool Worker:"
+read varworker
+echo \
+
+echo "Worker Password:"
+read varpass
+echo \
+
+echo "Extra Arguments For cgminer:"
+echo "Example: --suggest-diff 32"
+echo "**If None hit Enter**"
+read varextra
+
+> $varsave
+
+echo "#!/bin/bash" >> $varsave
+echo "cd cgminer" >> $varsave
+echo "./cgminer -o $varlink -u $varworker -p $varpass --nerdaxe-freq 200 $varextra" >> $varsave
+
+chmod +x $varsave
+
