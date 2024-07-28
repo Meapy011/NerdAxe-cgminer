@@ -1,4 +1,5 @@
 # NerdAxe-cgminer
+# !Currently Only Works On Ubuntu 18.0X and Raspberry Pi Buster!
 Cgminer for NerdAxe USB Miners
 
 Usage:
@@ -19,7 +20,7 @@ First, choose a name for the bash script to be saved as, no spaces allowed.
 Second, Insert chosen pool url.
 
 	  Pool URL:
-	$ solo.ckpool.org:333
+	$ solo.ckpool.org:3333
 
 Third, Insert worker name for selected pool.
 
