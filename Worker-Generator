@@ -27,4 +27,3 @@ echo "cd cgminer" >> $varsave
 echo "./cgminer -o $varlink -u $varworker -p $varpass --nerdaxe-freq 200 $varextra" >> $varsave
 
 chmod +x $varsave
-
