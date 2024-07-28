@@ -1,0 +1,3 @@
+#!/bin/bash
+cd cgminer
+./cgminer -o solo.ckpool.org:3333 -u bc1q2ccsfq03emnku5vc0ezkmrnt4vfce0dsnxk02w.NerdAxe -p x --nerdaxe-freq 200 --suggest-diff 32
