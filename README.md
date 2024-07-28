@@ -14,17 +14,17 @@ Wait for the Auto-Compiler to finish and then use the Worker Generator to make e
 First, choose a name for the bash script to be saved as, no spaces allowed.
 
 	   Save As:
-	 $ Exampe
+	 $ test-run
 
 Second, Insert chosen pool url.
 
 	  Pool URL:
-	$ stratum+tcp://jp.stratum.slushpool.com:3333
+	$ solo.ckpool.org:333
 
 Third, Insert worker name for selected pool.
 
 	  Pool Worker:
-	$ meap10.test
+	$ bc1q2ccsfq03emnku5vc0ezkmrnt4vfce0dsnxk02w.NerdAxe
 
 Forth, Insert worker password.
 
@@ -36,11 +36,11 @@ Fith, Now you can Insert any extra arguments for cgminer, If none just hit enter
 	  Extra Arguments For cgminer:
 	  Example: --suggest-diff 32
 	  **If none hit Enter**
-	$ 
+	$ --suggest-diff 32
 
 Once that's done, run the script just made with a ./ infront of the name.
 
-	$ ./Example
+	$ ./test-run
 
 If all is done well, you should see something like this.
 
