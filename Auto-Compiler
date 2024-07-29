@@ -4,20 +4,27 @@ echo "Updating And Installing Dependencies"
 echo \
 
 sudo apt-get update
+
 sudo apt-get install build-essential autoconf automake libtool pkg-config libcurl4-openssl-dev libudev-dev libjansson-dev libncurses5-dev libusb-1.0-0-dev zlib1g-dev git -y
 
 echo "Adding User to USB Dialout group"
 echo \
 
 cd cgminer
+
 sudo usermod -a -G dialout,plugdev $USER
+
 sudo cp 01-cgminer.rules /etc/udev/rules.d/
 
 echo "Configuring And Compiling Cgminer"
 echo \
+
 chmod +x autogen.sh
+
 CFLAGS="-O2 -march=native" ./autogen.sh
+
 ./configure --enable-nerdaxe
+
 make
 
 echo \ "Done!"
