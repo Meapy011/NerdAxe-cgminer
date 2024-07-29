@@ -1,6 +1,7 @@
 # NerdAxe-cgminer
 # Currently Only Works On Ubuntu 18.0X and Raspberry Pi Buster!
-Cgminer for NerdAxe USB Miners
+Cgminer for NerdAxe USB Miners Originally by NerdAxe
+ https://github.com/nerdaxe/cgminer-nerdaxe
 
 Usage:
 
