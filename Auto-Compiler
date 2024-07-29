@@ -15,7 +15,7 @@ sudo cp 01-cgminer.rules /etc/udev/rules.d/
 
 echo "Configuring And Compiling Cgminer"
 echo \
-
+chmod +x autogen.sh
 CFLAGS="-O2 -march=native" ./autogen.sh
 ./configure --enable-nerdaxe
 make
